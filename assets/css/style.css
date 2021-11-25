@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap");
+:root {
+  --black: #0b0b0b;
+  --primary: #f6f6f6;
+  --secondary-color: #f0f8ff;
+  --accent: #00ff87;
+  --border-color: #c2c2c2;
+  --primary-font-color: #1c1c1c;
+  --secendary-font-color: #252525; }
+
+/* === Font Import === */
+/* ==========    Common Css Start     =========== */
+.container-fluid {
+  width: 100%; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      max-width: 90%; } }
+  @media only screen and (max-width: 479px) {
+    .container {
+      max-width: 350px; } }
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: 0; }
+  .btn:focus {
+    outline: none; }
+
+/* ==========    Common Css End     =========== */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:focus {
+    outline: none; }
+
+a {
+  color: var(--black);
+  text-decoration: none; }
+
+ul > li,
+ol {
+  list-style: none; }
+
+body {
+  font-family: "Outfit", sans-serif; }
+
+/* ==========    Reset Css end     =========== */
+/*
+-------------------------------------------------
+
+CSS INDEX
+========
+00. Theme Defult CSS
+01. Header CSS
+02. Hero css
+---------------------------------------------------
+*/
+/* ===========  Top head Css Start  =========== */
+.top_header_section {
+  border-bottom: 1px solid #eee; }
+
+.top_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0; }
+  .top_header .top_left ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px; }
+    .top_header .top_left ul li a {
+      font-size: 14px; }
+      .top_header .top_left ul li a .fa-facebook-f {
+        color: #0e8ef1; }
+      .top_header .top_left ul li a .fa-twitter {
+        color: #2ba5da; }
+      .top_header .top_left ul li a .fa-youtube {
+        color: #fd0000; }
+      .top_header .top_left ul li a .fa-linkedin-in {
+        color: #0077b0; }
+
+.top_right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem; }
+  .top_right ul li a {
+    font-size: 14px; }
+
+/* =========   Top head Css End   ========= */
+/* =========  Navbar Css Start   ========= */
+.logo_menu_shopping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 45px;
+  padding: 15px 0; }
+  @media only screen and (max-width: 479px) {
+    .logo_menu_shopping {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .logo_menu_shopping .logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 3rem;
+            flex: 1 1 3rem;
+    text-align: center; }
+    .logo_menu_shopping .logo a {
+      font-size: 21px;
+      font-weight: 700; }
+      @media only screen and (max-width: 479px) {
+        .logo_menu_shopping .logo a {
+          font-size: 30px; } }
+  .logo_menu_shopping nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 5rem;
+            flex: 1 1 5rem; }
+    .logo_menu_shopping nav ul {
+      margin-left: -80px; }
+      @media only screen and (max-width: 479px) {
+        .logo_menu_shopping nav ul {
+          margin-left: -40px; } }
+      .logo_menu_shopping nav ul li {
+        float: left;
+        padding-left: 45px; }
+        .logo_menu_shopping nav ul li a {
+          font-weight: 600;
+          font-size: 15px; }
+
+.login_btn a {
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 10px; }
+  .login_btn a i {
+    font-size: 14px;
+    padding-left: 15px; }
+
+/* =========  Navbar Css End   =========== */
+/* =========  Hero Css Start   =========== */
+.hero_section {
+  background-color: var(--secondary-color);
+  padding: 65px 0; }
+  .hero_section .hero_section {
+    padding: 30px 0; }
+    .hero_section .hero_section .hero_title {
+      text-align: center; }
+      .hero_section .hero_section .hero_title h2 {
+        padding: 10px 0;
+        font-size: 30px; }
+    .hero_section .hero_section .hero_body {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (350px)[auto-fit];
+          grid-template-columns: repeat(auto-fit, 350px);
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media only screen and (max-width: 479px) {
+        .hero_section .hero_section .hero_body {
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
+      .hero_section .hero_section .hero_body .travel_single {
+        height: 170px;
+        background: url(../img/bg-2.jpg) center center no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        position: relative;
+        margin-top: 65px;
+        -webkit-box-shadow: 0px 8px #ffae00;
+                box-shadow: 0px 8px #ffae00; }
+        .hero_section .hero_section .hero_body .travel_single h3 {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          color: #fff;
+          font-size: 20px; }
+
+/* =========  Hero Css End     =========== */
+.newsletter_section {
+  text-align: center;
+  padding: 40px 0; }
+  .newsletter_section .newslatter_topline {
+    color: #0070ff;
+    font-size: 18px;
+    font-weight: 500; }
+  .newsletter_section .newslatter_title {
+    font-size: 33px;
+    padding: 5px 0; }
+  .newsletter_section .newslatter_tagline {
+    font-weight: 400;
+    padding: 10px 0; }
+  .newsletter_section form {
+    padding: 30px 0;
+    position: relative; }
+    .newsletter_section form input[type="text"] {
+      min-width: 650px;
+      padding: 10px 20px;
+      font-size: 19px;
+      border-radius: 30px;
+      border-color: cornflowerblue; }
+      @media only screen and (max-width: 479px) {
+        .newsletter_section form input[type="text"] {
+          min-width: 100%;
+          margin: 0 auto; } }
+    .newsletter_section form button {
+      position: relative;
+      border: 0;
+      width: 55px;
+      height: 33px;
+      background: #0070ff;
+      left: -6%;
+      border-radius: 50px;
+      top: 0px; }
+      @media only screen and (max-width: 479px) {
+        .newsletter_section form button {
+          left: 40%;
+          top: -40px; } }
+      .newsletter_section form button i {
+        color: #fff;
+        font-size: 16px; }

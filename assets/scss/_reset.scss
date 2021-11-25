@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+ul > li,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: $primay_font;
+}
+
+/* ==========    Reset Css end     =========== */
+

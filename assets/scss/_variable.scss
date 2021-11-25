@@ -1,0 +1,60 @@
+:root {
+  --black: #0b0b0b;
+  --primary: #f6f6f6;
+  --secondary-color: #f0f8ff;
+  --accent: #00ff87;
+  --border-color: #c2c2c2;
+  --primary-font-color: #1c1c1c;
+  --secendary-font-color: #252525;
+}
+
+// Responsive Variables
+$extraBig-device: "only screen and (min-w idth: 1600px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1600px)";
+$mini-laptop-device: "only screen and (min-width: 1200px) and (max-width: 1300px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$small-mobile3: "only screen and (min-width: 430px) and (max-width: 575px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile2: "only screen and (max-width: 575px)";
+$small-mobile: "only screen and (max-width: 479px)";
+
+// Colors
+$primary_color: var(--primary);
+$secendry_color: var(--secondary-color);
+$font_color: rgb(63, 62, 62);
+
+/* === Font Import === */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap");
+
+// fonts
+$primay_font: "Outfit", sans-serif;
+
+/* ==========    Common Css Start     =========== */
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  @media #{$tablet-device} {
+    max-width: 90%;
+  }
+  @media #{$small-mobile} {
+    max-width: 350px;
+  }
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* ==========    Common Css End     =========== */

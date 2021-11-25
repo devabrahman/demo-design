@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+:root {
+  --black: #0b0b0b;
+  --primary: #f6f6f6;
+  --secondary-color: #f0f8ff;
+  --accent: #00ff87;
+  --border-color: #c2c2c2;
+  --primary-font-color: #1c1c1c;
+  --secendary-font-color: #252525;
+}
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+ul > li,
+ol {
+  list-style: none;
+}
+/* === Font Import === */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+/* ==========    Reset Css end     =========== */
+
+/* ==========    Common Css Start     =========== */
+.container-fluid {
+  width: 100%;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+}
+.btn:focus {
+  outline: none;
+}
+
+/* ==========    Common Css End     =========== */
+/* =========   Top head Css Start   ========= */
+.top_header_section {
+  border-bottom: 1px solid #eee;
+}
+.top_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.top_header .top_left ul {
+  display: flex;
+  gap: 24px;
+}
+.top_header .top_left ul li a {
+  font-size: 14px;
+}
+.top_header .top_left ul li a .fa-facebook-f {
+  color: #0e8ef1;
+}
+.top_header .top_left ul li a .fa-twitter {
+  color: #2ba5da;
+}
+.top_header .top_left ul li a .fa-youtube {
+  color: #fd0000;
+}
+.top_header .top_left ul li a .fa-linkedin-in {
+  color: #0077b0;
+}
+.top_right ul {
+  display: flex;
+  gap: 2rem;
+}
+.top_right ul li a {
+  font-size: 14px;
+}
+/* =========   Top head Css End   ========= */
+
+/* =========  Navbar Css Start   ========= */
+.logo_menu_shopping {
+  display: flex;
+  justify-content: space-between;
+  line-height: 45px;
+  padding: 15px 0;
+}
+.logo_menu_shopping .logo a {
+  font-size: 21px;
+  font-weight: 700;
+}
+.logo_menu_shopping nav ul {
+  margin-left: -80px;
+}
+.logo_menu_shopping nav ul li {
+  float: left;
+  padding-left: 45px;
+}
+.logo_menu_shopping nav ul li a {
+  font-weight: 600;
+  font-size: 15px;
+}
+.login_btn a {
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.login_btn a i {
+  font-size: 14px;
+  padding-left: 15px;
+}
+/* =========  Navbar Css End   =========== */
